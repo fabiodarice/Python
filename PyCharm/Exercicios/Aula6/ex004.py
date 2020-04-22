@@ -1,0 +1,7 @@
+var1 = input('Digite algo: ')
+print('O tipo primitivo é {}'.format(type(var1)))
+print('O valor digitado é númerico?', var1.isnumeric())
+print('O valor digitado é letra?', var1.isalpha())
+print('O valor digitado é alfanumérico?', var1.isalnum())
+print('O valor digitado são letras maisculas?', var1.isupper())
+print('O valor digitado são letras minusculas?', var1.islower())

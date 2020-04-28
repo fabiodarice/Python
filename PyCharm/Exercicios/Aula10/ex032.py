@@ -1,5 +1,5 @@
 from datetime import date
-ano = int(input('Digite um ano para sabermos se é bissexto, se quiser analisar o ano atual basta digitar 0: '))
+ano = int(input('Digite um ano para sabermos se é \033[4;32mbissexto\033[m, se quiser analisar o ano atual basta digitar 0: '))
 if ano == 0:
     ano = date.today().year
 if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:

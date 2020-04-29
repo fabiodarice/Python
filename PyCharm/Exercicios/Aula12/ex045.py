@@ -15,7 +15,7 @@ computador = choice(computador)
 
 # Lógica
 if jogador == 'pedra' and computador == 'tesoura':
-    print('Você escolheu {} e o computador escolheu {}'.format(pedra, tesoura))
+    print('Você: {} x {} Computador'.format(pedra, tesoura))
     print('\033[1;32mParabéns!\033[m Você \033[4;34mVENCEU!\033[m')
 elif jogador == 'pedra' and computador == 'pedra':
     print('Você escolheu {} e computador escolheu {}'.format(pedra, pedra))

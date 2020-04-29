@@ -25,21 +25,21 @@ elif jogador == 'pedra' and computador == 'papel':
     print('Você \033[4;31mPERDEU!\033[m')
 
 elif jogador == 'papel' and computador == 'pedra':
-    print('Você escolheu {} e o computador escolheu {}'.format(papel, pedra))
+    print('Você {} x {} Computador'.format(papel, pedra))
     print('\033[1;32mParabéns!\033[m Você \033[4;34mVENCEU!\033[m')
 elif jogador == 'papel' and computador == 'papel':
-    print('Você escolheu {} e o computador escolheu {}'.format(papel, papel))
+    print('Você {} x {} Computador'.format(papel, papel))
     print('Deu \033[4;34mEMPATE!\033[m')
 elif jogador == 'papel' and computador == 'tesoura':
-    print('Você escolheu {} e o computador escolheu {}'.format(papel, tesoura))
+    print('Você {} x {} Computador'.format(papel, tesoura))
     print('Você \033[4;31mPERDEU!\033[m')
 
 elif jogador == 'tesoura' and computador == 'papel':
-    print('Você escolheu {} e o computador escolheu {}'.format(tesoura, papel))
+    print('Você {} x {} Computador'.format(tesoura, papel))
     print('\033[1;32mParabéns!\033[m Você \033[4;34mVENCEU!\033[m')
 elif jogador == 'tesoura' and computador == 'tesoura':
-    print('Você escolheu {} e o computador escolheu {}'.format(tesoura, tesoura))
+    print('Você {} x {} Computador'.format(tesoura, tesoura))
     print('Deu \033[4;34mEMPATE!\033[m')
 elif jogador == 'tesoura' and computador == 'pedra':
-    print('Você escolheu {} e o computador escolheu {}'.format(tesoura, pedra))
+    print('Você {} x {} Computador'.format(tesoura, pedra))
     print('Você \033[4;31mPERDEU!\033[m')

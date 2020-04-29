@@ -22,3 +22,4 @@ elif pagamento == 'cartão':
         print('O valor do seu produto é de \033[mR${:.2f}\033[m'.format(preco))
     if parcelas > 2:
         print('Você terá um acrécimo de \033[1;31m{}%\033[m de juros, o valor do produto com os juros é de \033[1;34mR${:.2f}\033[m'.format(juros, preco + (preco * (juros / 100))))
+        print('E o valor das parcelas serão {} vezes de R${:.2f}'.format(parcelas, (preco + (preco * (juros / 100))) / parcelas))

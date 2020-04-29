@@ -1,5 +1,5 @@
 # Importação de bibliotecas
-from math import ceil
+
 
 # Título do programa
 print('\033[1;34;40mCÁLCULO DE NOTA MÉDIA PARA PASSAR DE ANO\033[m')
@@ -7,12 +7,11 @@ print('\033[1;34;40mCÁLCULO DE NOTA MÉDIA PARA PASSAR DE ANO\033[m')
 # Objetos
 nota1 = float(input('Digite a primeira nota: '))
 nota2 = float(input('Digite a segunda nota: '))
-media = ceil((nota1 + nota2) / 2)
+media = (nota1 + nota2) / 2
 corte1 = 5
 corte2 = 7
 
 # Lógica
-print(media)
 if media < corte1:
     print('Sua média foi de \033[1;33m{:.1f}\033[m, você foi \033[1;34mREPROVADO!\033[m'.format(media))
 elif corte2 > media >= corte1:

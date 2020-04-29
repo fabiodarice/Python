@@ -19,11 +19,11 @@ print('segmento 3:', '\033[35m-\033[m' * trunc(s3))
 print('\033[31m-=-\033[m' * 20)
 
 if s1 + s2 > s3 and s1 + s3 > s2 and s2 + s3 > s1:
-    if s1 == s2 and s1 == s3:
+    if s1 == s2 == s3:
         print('Esses segmentos \033[1;32mformam\033[m um triângulo \033[1;34mEQUILÁTERO!\033[m')
-    if s1 == s2 and s1 != s3 or s1 == s3 and s1 != s2:
+    if s3 != s1 == s2 or s2 != s1 == s3:
         print('Esses segmentos \033[1;32mformam\033[m um triângulo \033[1;34mISÓSCELES!\033[m')
-    if s1 != s2 and s1 != s3:
+    if s1 != s2 != s3 != s1:
         print('Esses segmentos \033[1;32mformam\033[m um triângulo \033[1;34mESCALENO!\033[m')
 else:
     print('Esses segmentos \033[1;31mnão\033[m formam um triângulo')

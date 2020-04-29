@@ -1,6 +1,7 @@
 # Importação de bibliotecas
 from random import choice
 from emoji import emojize
+from time import sleep
 
 # Título do programa
 print('\033[1;34;40mJOKENPÔ\033[m')
@@ -14,6 +15,14 @@ tesoura = emojize(':v:', use_aliases=True)
 computador = choice(computador)
 
 # Lógica
+print('\033[33m-=-\033[m' * 10)
+print('\033[31mJO\033[m')
+sleep(0.8)
+print('\033[32mKEN\033[m')
+sleep(0.8)
+print('\033[34mPÔ!!!\033[m')
+print('\033[33m-=-\033[m' * 10)
+
 if jogador == 'pedra' and computador == 'tesoura':
     print('Você {} x {} Computador'.format(pedra, tesoura))
     print('\033[1;32mParabéns!\033[m Você \033[4;34mVENCEU!\033[m')
@@ -43,3 +52,6 @@ elif jogador == 'tesoura' and computador == 'tesoura':
 elif jogador == 'tesoura' and computador == 'pedra':
     print('Você {} x {} Computador'.format(tesoura, pedra))
     print('Você \033[4;31mPERDEU!\033[m')
+else:
+    print('Jogada invalida!')
+print('\033[33m-=-\033[m' * 10)

@@ -2,7 +2,7 @@
 
 
 # Título do programa
-print('\033[1;34;40mCONTAGEM DE NÚMEROS PARES\033[m')
+print('\033[1;34;40mCONTAGEM DE NÚMEROS PARES ATÉ 50\033[m')
 
 # Objetos
 

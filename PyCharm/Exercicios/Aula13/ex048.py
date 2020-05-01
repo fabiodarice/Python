@@ -2,7 +2,7 @@
 
 
 # Título do programa
-print('\033[1;34;40m\033[m')
+print('\033[1;34;40mSOMA ÍMPARES MÚLTIPLOS DE TRÊS\033[m')
 
 # Objetos
 s = 0

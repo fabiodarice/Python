@@ -2,7 +2,7 @@
 
 
 # Título do programa
-print('\033[m\033[m')
+print('\033[mTABUADA\033[m')
 
 # Objetos
 n = int(input('\033[30mDigite um valor inteiro:\033[m '))

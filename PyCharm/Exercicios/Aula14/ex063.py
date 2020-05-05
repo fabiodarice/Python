@@ -8,14 +8,14 @@ print('\033[1;34;40mSEQUÊNCIA DE FIBONACCI\033[m')
 a = 0
 b = 1
 x = 0
-incremento = 0
+incremento = 2
 
 # Lógica
 termos = int(input('\033[30mDeseja mostrar quantos termos?:\033[m '))
 
 print(a, b, end=' ')
 
-while (incremento + 2) != termos:
+while incremento != termos:
     incremento = incremento + 1
     x = a + b
     print(x, end=' ')

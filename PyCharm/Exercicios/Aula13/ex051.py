@@ -2,7 +2,7 @@
 
 
 # Título do programa
-print('\033[mPROGRESSÃO ARITMÉTICA\033[m')
+print('\033[1;34;40mPROGRESSÃO ARITMÉTICA DOS 10 PRIMEIROS TERMOS\033[m')
 
 # Objetos
 n = int(input('\033[30mDigite o número do primeiro termo:\033[m '))

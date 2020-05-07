@@ -8,17 +8,15 @@ print('\033[1;34;40mANÁLISE DE DADOS DO GRUPO\033[m')
 maiores = 0
 homens = 0
 mulheres = 0
-sexo = ''
-continuar = ''
 
 # Lógica
-while continuar != 'N':
+while True:
     print('\033[34m-\033[m' * 50)
     print(f'\033[1;33m{"CADASTRE UMA PESSOA":^50}\033[m')
     print('\033[34m-\033[m' * 50)
 
     idade = int(input('\033[30mIdade:\033[m '))
-    sexo = str(input('\033[30mSexo: [M/F]\033[m ')).strip().upper()
+    sexo = ' '
     while sexo not in 'MF':
         sexo = str(input('\033[30mSexo: [M/F]\033[m ')).strip().upper()
 
@@ -31,9 +29,12 @@ while continuar != 'N':
     if sexo == 'F' and idade < 20:
         mulheres += 1
 
-    continuar = str(input('\033[30mQuer continuar: [S/N]\033[m ')).strip().upper()
+    continuar = ' '
     while continuar not in 'SN':
         continuar = str(input('\033[30mQuer continuar: [S/N]\033[m ')).strip().upper()
+    if continuar == 'N':
+        break
+
 print(f'\033[1;33m{" FIM DO PROGRAMA ":=^50}\033[m')
 print(f'Total de pessoas com mais de 18 anos: \033[4;34m{maiores}\033[m')
 print(f'Ao todo temos \033[1;32m{homens} homens\033[m cadastrados')

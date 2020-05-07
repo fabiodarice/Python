@@ -1,5 +1,5 @@
 # Importação de bibliotecas
-from time import sleep
+
 
 # Título do programa
 print('\033[1;34;40mSIMULADOR DE CAIXA ELETRÔNICO\033[m')
@@ -24,40 +24,7 @@ while True:
             break
         else:
             valor = valor - (nota50 * 50)
-            if valor >= 20:
-                nota20 = valor // 20
-                resto = valor % 20
-                if resto == 0:
-                    break
-                else:
-                    valor = valor - (nota20 * 20)
-                    if valor >= 10:
-                        nota10 = valor // 10
-                        resto = valor % 10
-                        if resto == 0:
-                            break
-                        else:
-                            valor = valor - (nota10 * 10)
-                            if valor >= 1:
-                                nota1 = valor // 1
-                                break
-                    if valor >= 1:
-                        nota1 = valor // 1
-                        break
-            if valor >= 10:
-                nota10 = valor // 10
-                resto = valor % 10
-                if resto == 0:
-                    break
-                else:
-                    valor = valor - (nota10 * 10)
-                    if valor >= 1:
-                        nota1 = valor // 1
-                        break
-            if valor >= 1:
-                nota1 = valor // 1
-                break
-#########################################################
+
     if valor >= 20:
         nota20 = valor // 20
         resto = valor % 20
@@ -65,33 +32,7 @@ while True:
             break
         else:
             valor = valor - (nota20 * 20)
-            if valor >= 10:
-                nota10 = valor // 10
-                resto = valor % 10
-                if resto == 0:
-                    break
-                else:
-                    valor = valor - (nota10 * 10)
-                    if valor >= 1:
-                        nota1 = valor // 1
-                        break
-            if valor >= 1:
-                nota1 = valor // 1
-                break
-        if valor >= 10:
-            nota10 = valor // 10
-            resto = valor % 10
-            if resto == 0:
-                break
-            else:
-                valor = valor - (nota10 * 10)
-                if valor >= 1:
-                    nota1 = valor // 1
-                    break
-        if valor >= 1:
-            nota1 = valor // 1
-            break
-#########################################################
+
     if valor >= 10:
         nota10 = valor // 10
         resto = valor % 10
@@ -99,13 +40,7 @@ while True:
             break
         else:
             valor = valor - (nota10 * 10)
-            if valor >= 1:
-                nota1 = valor // 1
-                break
-        if valor >= 1:
-            nota1 = valor // 1
-            break
-#########################################################
+
     if valor >= 1:
         nota1 = valor // 1
         break

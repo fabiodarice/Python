@@ -9,14 +9,13 @@ gasto = 0
 caros = 0
 barato = 0
 produtomaisbarato = ''
-continuar = ''
 
 # Lógica
 print('\033[34m-\033[m' * 50)
 print(f'\033[1;33m{"LOJA SUPER BARATÃO":^50}\033[m')
 print('\033[34m-\033[m' * 50)
 
-while continuar != 'N':
+while True:
     produto = str(input('\033[30mNome do produto:\033[m ').strip().title())
     valor = float(input('\033[30mPreço R$:\033[m '))
 
@@ -29,9 +28,12 @@ while continuar != 'N':
         barato = valor
         produtomaisbarato = produto
 
-    continuar = str(input('\033[30mQuer continuar: [S/N]\033[m ')).strip().upper()
+    continuar = ' '
     while continuar not in 'SN':
         continuar = str(input('\033[30mQuer continuar: [S/N]\033[m ')).strip().upper()
+    if continuar == 'N':
+        break
+
 print(f'\033[1;33m{" FIM DO PROGRAMA ":=^50}\033[m')
 print(f'O total da compra foi \033[4;34mR${gasto:.2f}\033[m')
 print(f'Temos \033[1;32m{caros}\033[m produtos custando mais de R$1000,00')

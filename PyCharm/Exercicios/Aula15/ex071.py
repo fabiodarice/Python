@@ -14,7 +14,7 @@ nota1 = 0
 print('\033[34m=\033[m' * 50)
 print(f'\033[1;33m{"BANCO CEV":^50}\033[m')
 print('\033[34m=\033[m' * 50)
-valor = int(input('Que valor você que sacar R$: '))
+valor = int(input('\033[30mQue valor você que sacar R$:\033[m '))
 
 while True:
     if valor >= 50:

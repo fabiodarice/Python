@@ -16,7 +16,7 @@ print('\033[34m-\033[m' * 50)
 
 while True:
 
-    print(lista[n]+ '.' * (48 - (len(lista[n]) + 7)), end='')
+    print(f'{lista[n]:.<40}', end='')
     n += 1
     print(f'R${lista[n]:>7.2f}')
     n += 1

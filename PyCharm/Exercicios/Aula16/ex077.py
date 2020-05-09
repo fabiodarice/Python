@@ -1,5 +1,5 @@
 # Importação de bibliotecas
-from time import sleep
+
 
 # Título do programa
 print('\033[1;34;40mCONTANDO VOGAIS EM TUPLA\033[m')
@@ -8,7 +8,6 @@ print('\033[1;34;40mCONTANDO VOGAIS EM TUPLA\033[m')
 varias = ('aprender', 'programar', 'linguagem', 'python', 'curso', 'gratis', 'estudar',
           'praticar', 'trabalhar', 'mercador', 'programador', 'futuro')
 tamvarias = len(varias)
-palavra = 'doido'
 vogais = ('a', 'e', 'i', 'o', 'u')
 x = 0
 y = 0

@@ -25,7 +25,7 @@ else:
     print('O valor 3 não foi digitado em nenhuma posição')
 
 print(f'Os valores pares digitados foram', '', end='')
-for c in range(0, 4):
-    if números[c] % 2 == 0:
-        print(números[c], '', end='')
+for c in números:
+    if c % 2 == 0:
+        print(c, '', end='')
 

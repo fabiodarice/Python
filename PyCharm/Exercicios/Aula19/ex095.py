@@ -24,14 +24,14 @@ while True:
     if continuar == 'N':
         break
 
-    print('-' * 30)
+    print('-' * 40)
 
 print('\033[34m-=\033[m' * 40)
 
-print(f'{"cod":<5}{"nome":<10}{"gols":<10}{"total":>10}')
-print('-' * 40)
+print(f'{"cod":<5}{"nome":<10}{"gols":<20}{"total":>10}')
+print('-' * 50)
 for n, info in enumerate(dados):
-    print(f'{n:<5}{info["Nome"]:<10}{info["gols"]}{info["total"]:<10}')
+    print(f'{n:<5}{info["Nome"]:<10}{str(info["gols"]):<20}{info["total"]:>10}')
 
 print('\033[34m-=\033[m' * 40)
 
@@ -47,10 +47,10 @@ while True:
 
     print(f'-- LEVANTAMENTO DO JOGADOR {dados[mostrar]["Nome"]}:')
 
-    partidas = 1
-    for info in dados[mostrar]["gols"]:
-        print(f'No jogo {partidas} fez {info} gols.')
-        partidas += 1
+
+    for n, info in enumerate(dados[mostrar]['gols']):
+        print(f'No jogo {n + 1} fez {info} gols.')
+
 
     print('-' * 30)
 

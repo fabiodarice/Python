@@ -9,24 +9,21 @@ print('\033[1;34;40mFUNÇÕES PARA SORTEAR E SOMAR\033[m')
 números = list()
 
 # Funções
-def sorteia():
+def sorteia(lista):
     for n in range(0, 5):
-        números.append(randint(1, 10))
+        lista.append(randint(1, 10))
+        print(n, '', end='')
+        sleep(0.5)
+    print('PRONTO!')
 
-def somapar():
+def somapar(lista):
     soma = 0
-    for n, info in enumerate(números):
-        if info % 2 == 0:
-            soma += info
-    print(soma)
+    for valor in lista:
+        if valor % 2 == 0:
+            soma += valor
+    print(f'Somando os valores pares de {números}, temos {soma}', end='')
 
 
 # Lógica
-sorteia()
-print(f'Sorteando 5 valores da lista: ', end='')
-for n, info in enumerate(números):
-        print(info, '', end='')
-        sleep(0.5)
-print('PRONTO!')
-print(f'Somando os valores pares de {números}, temos ', end='')
-somapar()
+sorteia(números)
+somapar(números)

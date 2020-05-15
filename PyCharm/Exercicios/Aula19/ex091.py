@@ -1,6 +1,7 @@
 # Importação de bibliotecas
 from random import randint
 from time import sleep
+from operator import itemgetter
 
 # Título do programa
 print('\033[1;34;40mJOGO DE DADOS EM PYTHON\033[m')
@@ -17,7 +18,7 @@ for k, v in jogadores.items():
 
 print(f'{"Ranking dos jogadores":+^30}')
 
-for k, v in sorted(jogadores.items(), key=lambda item: item[1], reverse=True):
+for k, v in sorted(jogadores.items(), key=itemgetter(1), reverse=True):
     print(f'{cont}° lugar: {k} com {v}')
     cont += 1
     sleep(1)

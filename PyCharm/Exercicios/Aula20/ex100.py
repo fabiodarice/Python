@@ -12,7 +12,7 @@ números = list()
 def sorteia(lista):
     for n in range(0, 5):
         lista.append(randint(1, 10))
-        print(n, '', end='')
+        print(f'{lista[n]}', '', end='')
         sleep(0.5)
     print('PRONTO!')
 

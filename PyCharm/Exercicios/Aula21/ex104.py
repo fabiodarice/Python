@@ -20,12 +20,14 @@ título('validando entrada de dados do python')
 
 # Funções
 def leiaInt(txt):
-    numero = str(input(txt))
-    if numero.isnumeric():
-        numero = int(numero)
-        return numero
-    else:
-        return 'doido'
+    while True:
+        numero = str(input(txt))
+        if numero.isnumeric():
+            numero = int(numero)
+            break
+        else:
+            print('\033[1;31mERRO! Digite um número inteiro válido.\033[m')
+    return numero
 
 
 # Lógica

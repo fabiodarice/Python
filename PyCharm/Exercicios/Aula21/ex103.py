@@ -2,11 +2,8 @@
 def título(txt):
     print(f'\033[1;34;40m{txt}\033[m')
 
-def linhasimples(cor, tamanho):
-    print(f'\033[{cor}m-\033[m' * tamanho)
-
-def linhadupla(cor, tamanho):
-    print(f'\033[{cor}m-=\033[m' * tamanho)
+def linha(tipo, cor, tamanho):
+    print(f'\033[{cor}m{tipo}\033[m' * tamanho)
 
 
 # Importação de bibliotecas
@@ -19,19 +16,21 @@ título('ficha do jogador')
 
 
 # Funções
-def ficha(jog='<desconhecido>', gol=0):
-    print(f'O jogador {jog} fez {gol} no campeonato.')
-
+def ficha(j='<desconhecido>', g=0):
+    return f'O jogador {j} fez {g} gols no campeonato.'
 
 
 # Lógica
-n = str(input('Nome do jogador: '))
-g = str(input('Número de gols: '))
-if g.isnumeric():
-    g = int(g)
+linha('-', 34, 40)
+jogador = str(input('Nome do jogador: ')).strip().capitalize()
+gols = str(input('Número de gols: ')).strip()
+
+if gols.isnumeric():
+    gols = int(gols)
 else:
-    g = 0
-if n.strip() == '':
-    ficha(gol=g)
+    gols = 0
+
+if jogador == '':
+    print(ficha(g=gols))
 else:
-    ficha(n, g)
+    print(ficha(jogador, gols))

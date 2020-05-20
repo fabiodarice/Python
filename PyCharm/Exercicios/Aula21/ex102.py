@@ -2,11 +2,8 @@
 def título(txt):
     print(f'\033[1;34;40m{txt}\033[m')
 
-def linhasimples(cor, tamanho):
-    print(f'\033[{cor}m-\033[m' * tamanho)
-
-def linhadupla(cor, tamanho):
-    print(f'\033[{cor}m-=\033[m' * tamanho)
+def linha(tipo, cor, tamanho):
+    print(f'\033[{cor}m{tipo}\033[m' * tamanho)
 
 
 # Importação de bibliotecas
@@ -45,5 +42,6 @@ def fatorial(num, show=False):
 
 
 # Lógica
+linha('-', 31, 40)
 print(fatorial(5, True))
 help(fatorial)
